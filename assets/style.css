@@ -23,3 +23,28 @@ nav a:hover,nav a:focus{color:#fff;background:#276b91}
  #games-table .table-art{flex:0 0 112px;width:112px;height:53px;margin:0}
  #games-table .tag-cell{grid-column:1/-1}
 }
+
+
+/* Plain text masthead: matches the navigation ribbon without a graphic banner. */
+.site-header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 78px;
+  padding: 18px 25px;
+  background: #1b4d69;
+  color: #fff;
+  border-bottom: 3px solid #69b9e7;
+}
+.site-title {
+  margin: 0;
+  color: #fff;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: clamp(21px, 3vw, 29px);
+  line-height: 1.2;
+  font-weight: bold;
+}
+/* Ensure filtered rows stay hidden when mobile table rows use display:grid. */
+#games-table tbody tr[hidden] {
+  display: none !important;
+}
